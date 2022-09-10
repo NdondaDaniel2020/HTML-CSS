@@ -9,30 +9,50 @@
         table{
             border-collapse: collapse;
             width:500px;
-            
         }
         thead, tfoot{ 
-            border: 1px solid black;
+            border: px solid black;
             background-color: gray;
             color: white;
+            height: 30px;
+            position: relative;
+            
         }
-        td{
-            height: 30px;;
+        tbody>tr:nth-child(odd){
+            background-color: lightgray;
+        }
+
+        thead>tr>th{
+            position:sticky;
+            top: 1px;
+            background-color: gray;
+        }
+
+        td, th{
+            height: 30px;
             border: 1px solid black;
         }
+
+        
         td.num{
             text-align: right;
             padding-right: 8px;
         }
+        caption{
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+        
     </style>
 </head>
 <body>
     <table>
         <caption>População Angolana</caption>
-        <Thead>
-            <th scope="col">Posição</th>
+        <thead>
+            <th scope="col">Provincia</th>
             <th scope="col">População</th>
-        </Thead>
+        </thead>
         <Tbody>
             <tr>
                 <td>Província do Bengo</td>
@@ -61,6 +81,20 @@
             <tr>
                 <td>Província do Cunene</td>
                 <td class="num">443 386</td>
+            </tr>
+
+            <tr>
+                <td>Província do Bengo</td>
+                <td class="num">356 641</td>
+            </tr>
+            <tr>
+                <td>Província de Benguela</td>
+                <td class="num">2 231 385</td>
+            </tr>
+
+            <tr>
+                <td>Província do Bié</td>
+                <td class="num">1 455 255</td>
             </tr>
 
             <tr>
@@ -123,11 +157,11 @@
                 <td class="num">25 789 024</td>
             </tr>
 
-        </Tbody>
-        <Tfoot>
+        </tbody>
+        <tfoot>
             <th scope="row">Total</th>
             <td><strong>100000</strong></td>
-        </Tfoot>
+        </tfoot>
 
 
     </table>
