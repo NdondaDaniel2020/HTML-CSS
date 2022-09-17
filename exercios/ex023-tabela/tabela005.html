@@ -5,8 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td , th{
+            border: 1px solid black;
+            min-width: 80px;
+        }
+
+        .destaque{
+            background-color: aquamarine;
+        }
+
+        .nome{
+            background-color:aquamarine ;
+        }
+
+    </style>
+
 </head>
 <body>
-    
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="sexo">
+            <col class="idade">
+            <col class="profissao">
+        </colgroup>
+        
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Cláudio</td>
+                <td>M</td>
+                <td>28</td>
+                <td>Programador</td>
+            </tr>
+            
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>42</td>
+                <td>Professor</td>
+            </tr>
+            
+            <tr>
+                <td>Hélio</td>
+                <td>M</td>
+                <td>19</td>
+                <td>Vendedor</td>
+            </tr>
+            
+            
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>39</td>
+                <td>Medica</td>
+            </tr>
+
+            
+            <tr>
+                <td>Otavio</td>
+                <td>M</td>
+                <td>22</td>
+                <td>Nutricionista</td>
+            </tr>
+
+        </tbody>
+    </table>
 </body>
 </html>
