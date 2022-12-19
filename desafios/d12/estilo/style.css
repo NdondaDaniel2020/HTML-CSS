@@ -7,7 +7,8 @@
 
 @font-face {
     font-family: 'Sriracha';
-    src: url('../font/Sriracha-Regular.ttf');}
+    src: url('../font/Sriracha-Regular.ttf');
+    text-align:center}
 
 :root{
     --font1:verdana, Geneva, Tahoma, sans-serif;
