@@ -11,28 +11,36 @@
 <body>
     <main>
         <section id="telefone">
-            <iframe id="tela" nome="tela" src="home.html" frameborder="0">seu navegador não é compativel</iframe>
+            <iframe src="home.html" id="itela" nome="itela" frameborder="0">seu navegador não é compativel</iframe>
         </section>
+
         <section id="redes-sociais">
-            <a href="#" target="tela">
-                <img src="imagens/logo-home.jpg" alt="home">
+
+            <a onclick="mudarTela('home.html')">
+                <img src="imagens/logo-home.jpg" alt="Home">
             </a> <br>
-            <a href="#" target="tela">
-                <img src="imagens/logo-youtube.jpg" alt="youtube">
+            <a onclick="mudarTela('youtube.html')">
+                <img src="imagens/logo-youtube.jpg" alt="Youtube">
             </a> <br>
-            <a href="#" target="tela">
-                <img src="imagens/logo-github.jpg" alt="github">
+            <a onclick="mudarTela('github.html')">
+                <img src="imagens/logo-github.jpg" alt="Github">
             </a> <br>
-            <a href="#" target="tela">
+            <a onclick="mudarTela('instagram.html')" >
                 <img src="imagens/logo-instagram.jpg" alt="instagram">
             </a> <br>
-            <a href="#" target="tela">
+            <a onclick="mudarTela('twitter.html')" >
                 <img src="imagens/logo-twitter.jpg" alt="twitter">
             </a> <br>
-            <a href="#" target="tela">
+            <a onclick="mudarTela('facebook.html')" >
                 <img src="imagens/logo-facebook.jpg" alt="facebook">
             </a> <br>
         </section>
     </main>
+    <script>
+        function mudarTela(url){
+         let ifram = document.getElementById('itela')
+         ifram.src = url       
+        }
+    </script>
 </body>
 </html>
