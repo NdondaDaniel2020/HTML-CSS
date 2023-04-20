@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/*Todas as demais mídias*/
+/*Typical Device Breakpoints
+Mobile: 360 x 640.
+Mobile: 375 x 667.
+Mobile: 360 x 720.
+iPhone X: 375 x 812.
+Pixel 2: 411 x 731.
+Tablet: 768 x 1024.
+Laptop: 1366 x 768.
+High-res laptop or desktop: 1920 x 1080.
+
+*/
+
+@media print{/**/
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url(../img/back-tablet.jpg);/*Nas impressões background-image não funciona*/
+        text-shadow: none;
+    }
+    main {
+        border: solid 1px black;
+    }
+    
+    main h1 {
+        color:black;
+    }
+
+    main::after {
+        content: "Imprimido por Ndonda Daniel Matondo";
+    }
+
+    img#print{ 
+        display:block;
+        margin: auto;
+     }
+    img#phone{ display:none; }
+    img#tablet{ display:none; }
+    img#tv{ display:none; }
+    img#pc{ display:none; }
+
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){/*Tablet*/
+    body{
+        background-image: url(../img/back-tablet.jpg);
+    }
+
+    img#tablet { display: block; }
+    img#phone { display: none; }
+    img#print{ display: none; }
+    img#pc{ display:none; }
+    img#tv{ display:none; }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){/*Desktop*/
+    body {
+        background-image: url(../img/back-pc.jpg);
+    }
+
+    img#pc{
+        display: block;
+        margin: auto;
+}
+    img#tablet { display:none; }
+    img#phone { display: none; }
+    img#print{ display: none; }
+    img#tv{ display:none; }
+
+
+}
+
+@media screen and (min-width: 1200px){/*Grandes Telas*/
+    body {
+        background-image: url(../img/back-tv.jpg);
+    }
+
+    img#tv{ 
+        display:block;
+        margin: auto;
+     }
+    img#phone{ display:none; }
+    img#tablet{ display:none; }
+    img#print{ display:none; }
+    img#pc{ display:none; }
+
+
+}
