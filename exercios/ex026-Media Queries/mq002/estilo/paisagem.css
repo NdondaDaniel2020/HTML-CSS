@@ -1,6 +1,7 @@
 @charset "Utf-8";
 
-/*Configurações de modo Paisagem */
+/*Configurações de modo Paisagem 
+(orientation: landscape)*/
 
 body {
     background-image: url(../img/cev-landscape.jpg);
